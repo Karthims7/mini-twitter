@@ -1,15 +1,3 @@
-Sure Karthi — here is the **complete high-level README.md** you asked for, formatted as a **copy-paste code block**.
-
-Create the file inside:
-
-```
-~/mini-twitter/README.md
-```
-
----
-
-# ✅ **COPY THIS EXACT README.md**
-
 ```markdown
 # 🐦 Mini Twitter – Full Stack App (Go + Postgres + React + Vite + Docker)
 
