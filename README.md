@@ -1,18 +1,18 @@
 ```markdown
-# 🐦 Mini Twitter – Full Stack App (Go + Postgres + React + Vite + Docker)
+#  Mini Twitter – Full Stack App (Go + Postgres + React + Vite + Docker)
 
 A complete full-stack “Mini Twitter” clone built with:
 
-- **Go** (backend API)
-- **PostgreSQL** (database)
-- **React + Vite** (frontend)
-- **Docker Compose** (production-ready orchestration)
-- **EC2 Deployment** (real cloud hosting)
+- Go (backend API)
+- PostgreSQL (database)
+- React + Vite (frontend)
+- Docker Compose (production-ready orchestration)
+- EC2 Deployment (real cloud hosting)
 
 ---
 
 
-# ⚙️ Backend – Go API
+# Backend – Go API
 
 ### Features
 - JWT-based login/signup
@@ -23,13 +23,12 @@ A complete full-stack “Mini Twitter” clone built with:
 - Dockerized build (multi-stage)
 
 ### Development (Locally)
-```bash
+
 cd backend
 go run main.go
+
 ````
-
 ### Build inside Docker
-
 ```bash
 docker compose build api
 ```
