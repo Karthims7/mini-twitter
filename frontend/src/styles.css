@@ -1,33 +1,98 @@
-body {
-  font-family: system-ui, Arial;
-  margin: 0;
-  padding: 0;
-  background: #f5f7fa;
+/* frontend/src/styles.css - modern clean theme for components */
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --muted:#64748b;
+  --accent:#0d6efc;
+  --radius:12px;
 }
 
-.wrapper {
-  max-width: 700px;
-  margin: 24px auto;
-  padding: 16px;
-  background: #fff;
-  border-radius: 8px;
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#071124;
+  -webkit-font-smoothing:antialiased;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  max-width:980px;
+  margin:28px auto;
+  padding:20px;
 }
 
-header h1 {
-  margin: 0;
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+.header h1 { font-size:20px; margin:0; }
+.header .controls { display:flex; gap:8px; align-items:center; }
+
+.main {
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  gap:20px;
 }
 
-nav button {
-  margin-left: 8px;
+/* sidebar */
+.sidebar {
+  background:var(--card);
+  padding:12px;
+  border-radius:12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.04);
+}
+
+/* feed */
+.feed {
+  display:flex;
+  flex-direction:column;
+}
+
+.tweet-box {
+  background:var(--card);
+  padding:12px;
+  border-radius:12px;
+  margin-bottom:12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.03);
 }
 
 textarea {
-  width: 100%;
-  min-height: 80px;
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid rgba(11,18,32,0.06);
+  resize:vertical;
 }
+
+.tweet-card {
+  background: white;
+  padding:12px;
+  border-radius:12px;
+  margin-bottom:12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.03);
+}
+
+.meta { color:var(--muted); font-size:13px; margin-bottom:6px; }
+
+.btn {
+  padding:8px 12px;
+  border-radius:8px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-primary { background:var(--accent); color:white; box-shadow: 0 8px 20px rgba(13,110,252,0.08); }
+.btn-muted { background:transparent; color:var(--muted); border:1px solid rgba(11,18,32,0.04) }
+
+/* responsive */
+@media (max-width:900px){
+  .main { grid-template-columns: 1fr; }
+  .sidebar { order:2 }
+  .feed { order:1 }
+  .container { margin:12px }
+}
+
