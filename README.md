@@ -21,32 +21,8 @@ A complete full-stack “Mini Twitter” clone built with:
 - **Docker Compose** (production-ready orchestration)
 - **EC2 Deployment** (real cloud hosting)
 
-This README explains **how the whole system works**, **how to develop**, and **how to deploy** it anywhere.
-
 ---
 
-# 🚀 Architecture Overview
-
-```
-
-mini-twitter/
-│
-├── backend/          → Go REST API (Chi router, JWT auth, SQLX ORM)
-│   ├── main.go
-│   ├── go.mod
-│   ├── go.sum
-│   └── Dockerfile
-│
-├── frontend/         → React + Vite UI
-│   ├── index.html
-│   ├── package.json
-│   └── src/
-│
-└── docker-compose.yml → Runs API + DB services together
-
-````
-
----
 
 # ⚙️ Backend – Go API
 
