@@ -1,0 +1,33 @@
+body {
+  font-family: system-ui, Arial;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav button {
+  margin-left: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+}

@@ -1,0 +1,31 @@
+# === FRONTEND ===
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# === GO / BACKEND ===
+backend/server
+backend/main
+backend/*.exe
+
+# === DOCKER ===
+db_data/
+*.log
+
+# === ENV / SECRETS ===
+.env
+backend/.env
+frontend/.env
+
+# === VSCODE & OS NOISE ===
+.vscode/
+.DS_Store
+*.swp
+*.tmp
+*.bak
+
+# === NPM LOG FILES ===
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
